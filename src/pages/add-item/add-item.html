@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>New Item</ion-title>
+    <ion-buttons end>
+      <button (click)='saveItem()'><ion-icon name='checkmark'></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class='add-item'>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Item Name</ion-label>
+      <ion-input type='text' [(ngModel)]='name'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Expiration Date</ion-label>
+      <ion-datetime displayFormat='MM/DD/YY' min='2017' max='2020' [(ngModel)]='date'></ion-datetime>
+    </ion-item>
+  </ion-list>
+</ion-content>

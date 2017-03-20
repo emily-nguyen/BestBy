@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Items on Sale</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class='sale'>
+  <ion-list>
+    <ion-item *ngFor='let item of saleItems'>
+      <p style='text-align:left'>{{item.name}}
+        <span style='float:right'>{{item.price}}</span>
+      </p>
+    </ion-item>
+  </ion-list>
+</ion-content>
